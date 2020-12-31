@@ -784,7 +784,7 @@ google.maps.event.addDomListener(window, 'load', init);
 	
 	'use strict';
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
@@ -792,7 +792,7 @@ google.maps.event.addDomListener(window, 'load', init);
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -860,10 +860,9 @@ google.maps.event.addDomListener(window, 'load', init);
 				}
 			}
 
-		});	
+		});
 
 	}
-
 	
 
 	// Click outside of the Mobile Menu
@@ -946,7 +945,7 @@ google.maps.event.addDomListener(window, 'load', init);
 	document.getElementById("minutes").innerHTML = (minutes < 10 ? '0' + minutes : minutes) + " <small>minutes</small> ";
 	document.getElementById("seconds").innerHTML = (seconds < 10 ? '0' + seconds : seconds) + " <small>seconds</small> ";
 
-	// If the count down is finished, write some text 
+	// If the count down is finished, write some text
 	if (distance < 0) {
 	 clearInterval(x);
 	 document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";
@@ -966,6 +965,7 @@ google.maps.event.addDomListener(window, 'load', init);
 
 
 }());
+
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-geolocation-inlinesvg-smil-svg-svgclippaths-touch-webgl-shiv-mq-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
  */

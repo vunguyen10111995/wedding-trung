@@ -2,7 +2,7 @@
 	
 	'use strict';
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
@@ -10,7 +10,7 @@
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -78,10 +78,9 @@
 				}
 			}
 
-		});	
+		});
 
 	}
-
 	
 
 	// Click outside of the Mobile Menu
@@ -164,7 +163,7 @@
 	document.getElementById("minutes").innerHTML = (minutes < 10 ? '0' + minutes : minutes) + " <small>minutes</small> ";
 	document.getElementById("seconds").innerHTML = (seconds < 10 ? '0' + seconds : seconds) + " <small>seconds</small> ";
 
-	// If the count down is finished, write some text 
+	// If the count down is finished, write some text
 	if (distance < 0) {
 	 clearInterval(x);
 	 document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";
